@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Red Suit</title>
+    <style>
+        :root { --brand-red: #D32F2F; --dark-bg: #121212; --text-light: #f4f4f4; }
+        body { margin: 0; font-family: sans-serif; background: var(--dark-bg); color: var(--text-light); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #1a1a1a; }
+        .logo { font-weight: bold; font-size: 1.5rem; text-decoration: none; color: white; }
+        .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; }
+        .nav-links a { text-decoration: none; color: white; }
+        .content { max-width: 600px; margin: 50px auto; padding: 20px; }
+        h2 { color: var(--brand-red); text-align: center; }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, textarea { padding: 12px; border-radius: 5px; border: 1px solid #333; background: #1a1a1a; color: white; }
+        .button { padding: 12px; background: var(--brand-red); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">RED<span style="color:var(--brand-red)">SUIT</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
