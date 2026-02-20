@@ -31,6 +31,11 @@
 
         .hero { height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
         .button { padding: 12px 30px; background: var(--brand-red); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; }
+        .secondary-button {margin-top: 20px; color: #888; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid transparent; transition: 0.3s;}
+.secondary-button:hover {
+    color: var(--brand-red);
+    border-bottom: 1px solid var(--brand-red);
+}
     </style>
 </head>
 <body>
@@ -53,6 +58,7 @@
         
         <p>Sharp. Mobile. Ready.</p>
         <a href="about.html" class="button">Learn More</a>
+        <a href="https://my.mobile/" target="_blank" class="secondary-button">Want a .mobile of your own?</a>
     </div>
 
     <script>
