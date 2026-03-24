@@ -10,23 +10,35 @@
         nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: #1a1a1a; }
         .logo { font-weight: bold; font-size: 1.5rem; text-decoration: none; color: white; }
         .nav-links { list-style: none; display: flex; gap: 20px; }
-        .nav-links a { text-decoration: none; color: white; }
+        .nav-links a { text-decoration: none; color: white; transition: 0.3s; }
+        .nav-links a:hover { color: var(--brand-red); }
         .content { max-width: 800px; margin: 50px auto; padding: 20px; text-align: center; }
         h2 { color: var(--brand-red); font-size: 2.5rem; }
         .podcast-container { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; margin-top: 20px; }
+        audio { width: 100%; max-width: 500px; margin-top: 20px; }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">RED<span style="color:var(--brand-red)">SUIT</span></a>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <div class="podcast-container">
-    <h3>Episode 1: Verizon's 'Dan Plan' and 2026 Ambitions.mp3</h3>
-    <audio controls style="width: 100%; max-width: 500px;">
-        <source src="episode1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</div>
+    <div class="content">
+        <h2>The Red Suit Podcast</h2>
+        <div class="podcast-container">
+            <h3>Episode 1: Verizon's 'Dan Plan' and 2026 Ambitions</h3>
+            <audio controls>
+                <source src="episode1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
 </body>
 </html>
