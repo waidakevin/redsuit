@@ -22,12 +22,28 @@
         .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
         .hamburger div { width: 25px; height: 3px; background: white; transition: 0.3s; }
 
-        /* Mobile View */
-        @media (max-width: 768px) {
-            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #1a1a1a; padding: 20px; text-align: center; }
-            .nav-links.active { display: flex; }
-            .hamburger { display: flex; }
-        }
+       /* Mobile View */
+@media (max-width: 768px) {
+  .nav-links { 
+    display: none; 
+    flex-direction: column; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #1a1a1a; 
+    padding: 20px; 
+    text-align: center; 
+  }
+
+  /* UPDATE THIS BLOCK BELOW */
+  .nav-links.active { 
+    display: flex; 
+    z-index: 1000; /* This ensures it sits on top of your "RED SUIT" logo image */
+  }
+
+  .hamburger { display: flex; }
+}
 
         .hero { height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
         .button { padding: 12px 30px; background: var(--brand-red); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; }
